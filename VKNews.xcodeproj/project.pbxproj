@@ -3,28 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		52EF561F50CF4EF2E15C37D6 /* Pods_VKNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D300FF47BA793646EC8D1F86 /* Pods_VKNews.framework */; };
 		6BD4FD39258FC431002AA914 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD4FD38258FC431002AA914 /* AppDelegate.swift */; };
 		6BD4FD3B258FC431002AA914 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD4FD3A258FC431002AA914 /* SceneDelegate.swift */; };
-		6BD4FD3D258FC431002AA914 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD4FD3C258FC431002AA914 /* ViewController.swift */; };
-		6BD4FD40258FC431002AA914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD4FD3E258FC431002AA914 /* Main.storyboard */; };
+		6BD4FD3D258FC431002AA914 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD4FD3C258FC431002AA914 /* AuthViewController.swift */; };
 		6BD4FD42258FC434002AA914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BD4FD41258FC434002AA914 /* Assets.xcassets */; };
 		6BD4FD45258FC434002AA914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD4FD43258FC434002AA914 /* LaunchScreen.storyboard */; };
+		6BD4FD57258FCA50002AA914 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD4FD56258FCA50002AA914 /* AuthService.swift */; };
+		6BD4FD63258FCD19002AA914 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD4FD62258FCD19002AA914 /* AuthViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6BD4FD35258FC431002AA914 /* VKNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD4FD38258FC431002AA914 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BD4FD3A258FC431002AA914 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6BD4FD3C258FC431002AA914 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6BD4FD3F258FC431002AA914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6BD4FD3C258FC431002AA914 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		6BD4FD41258FC434002AA914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BD4FD44258FC434002AA914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BD4FD46258FC434002AA914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BD4FD56258FCA50002AA914 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		6BD4FD62258FCD19002AA914 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
 		9191A94954AD5DDF6F6A31A6 /* Pods-VKNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKNews.debug.xcconfig"; path = "Target Support Files/Pods-VKNews/Pods-VKNews.debug.xcconfig"; sourceTree = "<group>"; };
 		B5960B0E3034A22527117A74 /* Pods-VKNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKNews.release.xcconfig"; path = "Target Support Files/Pods-VKNews/Pods-VKNews.release.xcconfig"; sourceTree = "<group>"; };
 		D300FF47BA793646EC8D1F86 /* Pods_VKNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,13 +67,22 @@
 			children = (
 				6BD4FD38258FC431002AA914 /* AppDelegate.swift */,
 				6BD4FD3A258FC431002AA914 /* SceneDelegate.swift */,
-				6BD4FD3C258FC431002AA914 /* ViewController.swift */,
-				6BD4FD3E258FC431002AA914 /* Main.storyboard */,
+				6BD4FD3C258FC431002AA914 /* AuthViewController.swift */,
+				6BD4FD62258FCD19002AA914 /* AuthViewController.storyboard */,
+				6BD4FD5A258FCA5D002AA914 /* Services */,
 				6BD4FD41258FC434002AA914 /* Assets.xcassets */,
 				6BD4FD43258FC434002AA914 /* LaunchScreen.storyboard */,
 				6BD4FD46258FC434002AA914 /* Info.plist */,
 			);
 			path = VKNews;
+			sourceTree = "<group>";
+		};
+		6BD4FD5A258FCA5D002AA914 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6BD4FD56258FCA50002AA914 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		80AB9A7C83B2C0FBAE91CA53 /* Pods */ = {
@@ -80,7 +91,6 @@
 				9191A94954AD5DDF6F6A31A6 /* Pods-VKNews.debug.xcconfig */,
 				B5960B0E3034A22527117A74 /* Pods-VKNews.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,8 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BD4FD45258FC434002AA914 /* LaunchScreen.storyboard in Resources */,
+				6BD4FD63258FCD19002AA914 /* AuthViewController.storyboard in Resources */,
 				6BD4FD42258FC434002AA914 /* Assets.xcassets in Resources */,
-				6BD4FD40258FC431002AA914 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,23 +216,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BD4FD3D258FC431002AA914 /* ViewController.swift in Sources */,
+				6BD4FD3D258FC431002AA914 /* AuthViewController.swift in Sources */,
 				6BD4FD39258FC431002AA914 /* AppDelegate.swift in Sources */,
 				6BD4FD3B258FC431002AA914 /* SceneDelegate.swift in Sources */,
+				6BD4FD57258FCA50002AA914 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6BD4FD3E258FC431002AA914 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6BD4FD3F258FC431002AA914 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6BD4FD43258FC434002AA914 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
