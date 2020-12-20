@@ -1,7 +1,7 @@
 # VKNews
 Новостная лента Вконтакте. VK SDK
 
-# Использовал:
+# Использую:
 - Clean Swift Architecture
 - User Authorization / Registration
 - JSON Decodable
