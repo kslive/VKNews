@@ -32,7 +32,7 @@ class AuthService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
     }
     
     func wakeUpSession() {
-        let scope = ["offline"]
+        let scope = ["wall, friends, photos"]
         VKSdk.wakeUpSession(scope) { [weak self] (state, error) in
             guard let self = self else { return }
             switch state {
