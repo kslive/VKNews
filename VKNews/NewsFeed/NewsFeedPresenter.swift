@@ -21,6 +21,7 @@ class NewsFeedPresenter: NewsFeedPresentationLogic {
         print("some")
     case .presentNewsFeed:
         viewController?.displayData(viewModel: .displayNewsFeed)
+        
     }
   }
 }
