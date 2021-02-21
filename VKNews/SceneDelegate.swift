@@ -49,7 +49,7 @@ extension SceneDelegate: AuthServiceDelegate {
     }
     
     func authServiceSignIn() {
-        let feedViewController = UIStoryboard(name: String(describing: FeedViewController.self), bundle: nil).instantiateInitialViewController() as! FeedViewController
+        let feedViewController = UIStoryboard(name: String(describing: NewsFeedViewController.self), bundle: nil).instantiateInitialViewController() as! NewsFeedViewController
         let navigationController = UINavigationController(rootViewController: feedViewController)
         window?.rootViewController = navigationController
     }
